@@ -48,10 +48,34 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
           ),
-          TextButton.icon(
-            onPressed: () {},
-            icon: const Icon(Icons.forward),
-            label: const Text("Let's Go"),
+          GestureDetector(
+            onTap: () {},
+            child: Container(
+              margin: const EdgeInsets.only(left: 20.0, top: 20.0),
+              width: 150.0,
+              height: 40.0,
+              decoration: BoxDecoration(
+                color: Colors.purple,
+                borderRadius: BorderRadius.circular(20.0),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  Text(
+                    "Let's Go!",
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      color: Colors.white,
+                    ),
+                  ),
+                  SizedBox(width: 10.0),
+                  Icon(
+                    Icons.arrow_forward_sharp,
+                    color: Colors.white,
+                  ),
+                ],
+              ),
+            ),
           ),
         ],
       ),
