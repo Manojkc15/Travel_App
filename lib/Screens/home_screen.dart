@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -22,29 +23,35 @@ class HomeScreen extends StatelessWidget {
           ),
           Container(
             padding: const EdgeInsets.only(left: 20.0, top: 20.0),
-            child: const Text(
+            child: Text(
               "Winter",
-              style: TextStyle(
+              style: GoogleFonts.merriweather(
                 fontSize: 40.0,
+                fontWeight: FontWeight.bold,
+                letterSpacing: .45,
               ),
             ),
           ),
           Container(
             padding: const EdgeInsets.only(left: 20.0),
-            child: const Text(
+            child: Text(
               "Vacation Trips",
-              style: TextStyle(
+              style: GoogleFonts.merriweather(
                 fontSize: 40.0,
+                fontWeight: FontWeight.bold,
+                letterSpacing: .45,
               ),
             ),
           ),
           Container(
-            padding: const EdgeInsets.only(left: 20.0, right: 20.0),
-            child: const Text(
-              "Enjoy your winter vacations with warmth and amazing sightseeing on the mountains."
+            padding: const EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 0.0),
+            child: Text(
+              "Enjoy your winter vacations with warmth and amazing sightseeing on the mountains. "
               "Enjoy the best experience with us!",
-              style: TextStyle(
+              style: GoogleFonts.roboto(
                 fontSize: 18.0,
+                fontWeight: FontWeight.w600,
+                letterSpacing: .25,
               ),
             ),
           ),
@@ -60,16 +67,18 @@ class HomeScreen extends StatelessWidget {
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
+                children: [
                   Text(
                     "Let's Go!",
-                    style: TextStyle(
+                    style: GoogleFonts.lora(
                       fontSize: 20.0,
+                      fontWeight: FontWeight.w600,
+                      letterSpacing: .4,
                       color: Colors.white,
                     ),
                   ),
-                  SizedBox(width: 10.0),
-                  Icon(
+                  const SizedBox(width: 10.0),
+                  const Icon(
                     Icons.arrow_forward_sharp,
                     color: Colors.white,
                   ),
