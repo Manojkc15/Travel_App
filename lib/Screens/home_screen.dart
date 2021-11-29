@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:page_transition/page_transition.dart';
+
+import 'discover_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -56,7 +59,16 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
           GestureDetector(
-            onTap: () {},
+            onTap: () => Navigator.push(
+              context,
+              PageTransition(
+                child: const DiscoverScreen(),
+                type: PageTransitionType.fade,
+                duration: const Duration(
+                  milliseconds: 700,
+                ),
+              ),
+            ),
             child: Container(
               margin: const EdgeInsets.only(left: 20.0, top: 20.0),
               width: 150.0,
