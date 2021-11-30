@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -23,15 +25,22 @@ class CardSample extends StatelessWidget {
             child: image,
           ),
         ),
-        // Align(
-        //   alignment: const Alignment(0.5, 0.0),
-        //   child: Text(
-        //     title,
-        //     style: GoogleFonts.merriweather(
-        //       fontSize: 24.0,
-        //     ),
-        //   ),
-        // ),
+        Container(
+          width: MediaQuery.of(context).size.width - 60,
+          margin: const EdgeInsets.only(left: 12.0, top: 170.0),
+          padding: const EdgeInsets.all(20.0),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(20.0),
+            color: Colors.black.withOpacity(0.3),
+          ),
+          child: Text(
+            title,
+            style: GoogleFonts.merriweather(
+              fontSize: 24.0,
+              color: Colors.white,
+            ),
+          ),
+        ),
       ],
     );
   }

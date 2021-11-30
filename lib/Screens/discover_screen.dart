@@ -55,7 +55,7 @@ class DiscoverScreen extends StatelessWidget {
               title: 'Northern Mountain',
             ),
             CardSample(
-              image: Image.asset('assets/images/national-park-winter.jpg'),
+              image: Image.asset('assets/images/national-park-winter.png'),
               title: 'Northern Mountain',
             ),
             CardSample(
