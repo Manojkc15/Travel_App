@@ -39,28 +39,36 @@ class DiscoverScreen extends StatelessWidget {
           ),
         ],
       ),
-      // body: Container(
-      // child: CardSample(
-      //   image: Image.asset('assets/images/mountain1.png'),
-      //   title: 'Northern Mountain',
-      // ),
-      // ),
       body: SizedBox(
         height: 250,
         child: ListView(
           scrollDirection: Axis.horizontal,
           children: [
             CardSample(
-              image: Image.asset('assets/images/mountain1.png'),
+              image: Image.asset(
+                'assets/images/mountain1.png',
+                width: 352,
+                height: 355,
+                fit: BoxFit.fitHeight,
+              ),
               title: 'Northern Mountain',
             ),
             CardSample(
               image: Image.asset('assets/images/national-park-winter.jpg'),
-              title: 'Northern Mountain',
+              title: 'National Park',
             ),
             CardSample(
               image: Image.asset('assets/images/Greenough-mountain.jpg'),
-              title: 'Northern Mountain',
+              title: 'Greenough Mountain',
+            ),
+            CardSample(
+              image: Image.asset(
+                'assets/images/mountain2.png',
+                width: 352,
+                height: 350,
+                fit: BoxFit.fitHeight,
+              ),
+              title: 'Snowy Mountain',
             ),
           ],
         ),
