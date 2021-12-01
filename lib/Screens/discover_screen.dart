@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -52,14 +54,109 @@ class DiscoverScreen extends StatelessWidget {
                 fit: BoxFit.fitHeight,
               ),
               title: 'Northern Mountain',
+              rating: "5.0",
+              stars: Row(
+                children: [
+                  Icon(
+                    Icons.star,
+                    color: Colors.yellow[700],
+                    size: 17,
+                  ),
+                  Icon(
+                    Icons.star,
+                    color: Colors.yellow[700],
+                    size: 17,
+                  ),
+                  Icon(
+                    Icons.star,
+                    color: Colors.yellow[700],
+                    size: 17,
+                  ),
+                  Icon(
+                    Icons.star,
+                    color: Colors.yellow[700],
+                    size: 17,
+                  ),
+                  Icon(
+                    Icons.star,
+                    color: Colors.yellow[700],
+                    size: 17,
+                  ),
+                ],
+              ),
             ),
             CardSample(
-              image: Image.asset('assets/images/national-park-winter.jpg'),
+              image: Image.asset(
+                'assets/images/national-park-winter.jpg',
+                width: 352,
+                height: 355,
+                fit: BoxFit.fitHeight,
+              ),
               title: 'National Park',
+              rating: "4.5",
+              stars: Row(
+                children: [
+                  Icon(
+                    Icons.star,
+                    color: Colors.yellow[700],
+                    size: 17,
+                  ),
+                  Icon(
+                    Icons.star,
+                    color: Colors.yellow[700],
+                    size: 17,
+                  ),
+                  Icon(
+                    Icons.star,
+                    color: Colors.yellow[700],
+                    size: 17,
+                  ),
+                  Icon(
+                    Icons.star,
+                    color: Colors.yellow[700],
+                    size: 17,
+                  ),
+                  Icon(
+                    Icons.star_half,
+                    color: Colors.yellow[700],
+                    size: 17,
+                  ),
+                ],
+              ),
             ),
             CardSample(
               image: Image.asset('assets/images/Greenough-mountain.jpg'),
               title: 'Greenough Mountain',
+              rating: "4.2",
+              stars: Row(
+                children: [
+                  Icon(
+                    Icons.star,
+                    color: Colors.yellow[700],
+                    size: 17,
+                  ),
+                  Icon(
+                    Icons.star,
+                    color: Colors.yellow[700],
+                    size: 17,
+                  ),
+                  Icon(
+                    Icons.star,
+                    color: Colors.yellow[700],
+                    size: 17,
+                  ),
+                  Icon(
+                    Icons.star,
+                    color: Colors.yellow[700],
+                    size: 17,
+                  ),
+                  Icon(
+                    Icons.star_half,
+                    color: Colors.yellow[700],
+                    size: 17,
+                  ),
+                ],
+              ),
             ),
             CardSample(
               image: Image.asset(
@@ -69,6 +166,36 @@ class DiscoverScreen extends StatelessWidget {
                 fit: BoxFit.fitHeight,
               ),
               title: 'Snowy Mountain',
+              stars: Row(
+                children: [
+                  Icon(
+                    Icons.star,
+                    color: Colors.yellow[700],
+                    size: 17,
+                  ),
+                  Icon(
+                    Icons.star,
+                    color: Colors.yellow[700],
+                    size: 17,
+                  ),
+                  Icon(
+                    Icons.star,
+                    color: Colors.yellow[700],
+                    size: 17,
+                  ),
+                  Icon(
+                    Icons.star,
+                    color: Colors.yellow[700],
+                    size: 17,
+                  ),
+                  Icon(
+                    Icons.star,
+                    color: Colors.yellow[700],
+                    size: 17,
+                  ),
+                ],
+              ),
+              rating: "5.0",
             ),
           ],
         ),

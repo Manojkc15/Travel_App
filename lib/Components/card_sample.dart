@@ -1,5 +1,4 @@
 import 'dart:ui';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -8,11 +7,15 @@ import 'package:google_fonts/google_fonts.dart';
 class CardSample extends StatelessWidget {
   Image image;
   String title;
+  Row stars;
+  String rating;
 
   CardSample({
     Key? key,
     required this.image,
     required this.title,
+    required this.stars,
+    required this.rating,
   }) : super(key: key);
 
   @override
@@ -53,34 +56,10 @@ class CardSample extends StatelessWidget {
               ),
               Row(
                 children: [
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 17,
-                  ),
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 17,
-                  ),
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 17,
-                  ),
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 17,
-                  ),
-                  Icon(
-                    Icons.star_half,
-                    color: Colors.yellow[700],
-                    size: 17,
-                  ),
+                  stars,
                   const SizedBox(width: 2),
                   Text(
-                    '4.5',
+                    rating,
                     style: GoogleFonts.roboto(
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
