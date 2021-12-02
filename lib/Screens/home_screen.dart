@@ -71,8 +71,8 @@ class HomeScreen extends StatelessWidget {
             ),
             child: Container(
               margin: const EdgeInsets.only(left: 20.0, top: 20.0),
-              width: 150.0,
-              height: 40.0,
+              width: 152.0,
+              height: 42.0,
               decoration: BoxDecoration(
                 color: Colors.purple,
                 borderRadius: BorderRadius.circular(20.0),
@@ -89,10 +89,11 @@ class HomeScreen extends StatelessWidget {
                       color: Colors.white,
                     ),
                   ),
-                  const SizedBox(width: 10.0),
+                  const SizedBox(width: 3.0),
                   const Icon(
-                    Icons.arrow_forward_sharp,
+                    Icons.arrow_right_alt,
                     color: Colors.white,
+                    size: 42.0,
                   ),
                 ],
               ),

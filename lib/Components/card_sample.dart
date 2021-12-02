@@ -57,12 +57,13 @@ class CardSample extends StatelessWidget {
               Row(
                 children: [
                   stars,
-                  const SizedBox(width: 2),
+                  const SizedBox(width: 3),
                   Text(
                     rating,
                     style: GoogleFonts.roboto(
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
+                      fontSize: 16.0,
                     ),
                   ),
                 ],
