@@ -1,8 +1,9 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'package:travel_app/Components/card_sample.dart';
+import 'package:travel_app/Components/horizontal_list.dart';
 
 class DiscoverScreen extends StatelessWidget {
   const DiscoverScreen({Key? key}) : super(key: key);
@@ -39,164 +40,36 @@ class DiscoverScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: SizedBox(
-        height: 250,
-        child: ListView(
-          scrollDirection: Axis.horizontal,
-          children: [
-            CardSample(
-              image: Image.asset(
-                'assets/images/mountain1.png',
-                width: 352,
-                height: 355,
-                fit: BoxFit.fitHeight,
-              ),
-              title: 'Northern Mountain',
-              rating: "5.0",
-              stars: Row(
-                children: [
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 17,
+      body: Column(
+        children: [
+          const SizedBox(
+            height: 250,
+            child: HorizontalList(),
+          ),
+          Container(
+            padding: const EdgeInsets.all(12.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "Recommended",
+                  style: GoogleFonts.merriweather(
+                    fontSize: 18.0,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: .55,
                   ),
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 17,
+                ),
+                Text(
+                  "View All",
+                  style: GoogleFonts.merriweather(
+                    fontSize: 14.0,
+                    letterSpacing: .25,
                   ),
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 17,
-                  ),
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 17,
-                  ),
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 17,
-                  ),
-                ],
-              ),
+                ),
+              ],
             ),
-            CardSample(
-              image: Image.asset(
-                'assets/images/national-park-winter.jpg',
-                width: 352,
-                height: 355,
-                fit: BoxFit.fitHeight,
-              ),
-              title: 'National Park',
-              rating: "4.5",
-              stars: Row(
-                children: [
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 17,
-                  ),
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 17,
-                  ),
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 17,
-                  ),
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 17,
-                  ),
-                  Icon(
-                    Icons.star_half,
-                    color: Colors.yellow[700],
-                    size: 17,
-                  ),
-                ],
-              ),
-            ),
-            CardSample(
-              image: Image.asset('assets/images/Greenough-mountain.jpg'),
-              title: 'Greenough Mountain',
-              rating: "4.2",
-              stars: Row(
-                children: [
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 17,
-                  ),
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 17,
-                  ),
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 17,
-                  ),
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 17,
-                  ),
-                  Icon(
-                    Icons.star_half,
-                    color: Colors.yellow[700],
-                    size: 17,
-                  ),
-                ],
-              ),
-            ),
-            CardSample(
-              image: Image.asset(
-                'assets/images/mountain2.png',
-                width: 352,
-                height: 350,
-                fit: BoxFit.fitHeight,
-              ),
-              title: 'Snowy Mountain',
-              stars: Row(
-                children: [
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 17,
-                  ),
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 17,
-                  ),
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 17,
-                  ),
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 17,
-                  ),
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 17,
-                  ),
-                ],
-              ),
-              rating: "5.0",
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
