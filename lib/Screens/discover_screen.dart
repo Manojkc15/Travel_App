@@ -4,6 +4,8 @@ import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:travel_app/Components/horizontal_list.dart';
+import 'package:travel_app/Components/recommended_list.dart';
+// import 'package:travel_app/Components/recommended_card.dart';
 
 class DiscoverScreen extends StatelessWidget {
   const DiscoverScreen({Key? key}) : super(key: key);
@@ -69,6 +71,7 @@ class DiscoverScreen extends StatelessWidget {
               ],
             ),
           ),
+          const RecommendedList(),
         ],
       ),
     );

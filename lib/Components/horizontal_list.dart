@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'card_sample.dart';
 
+// ignore: must_be_immutable
 class HorizontalList extends StatelessWidget {
   const HorizontalList({Key? key}) : super(key: key);
 
