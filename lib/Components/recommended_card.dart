@@ -35,7 +35,6 @@ class RecommendedCard extends StatelessWidget {
             borderRadius: BorderRadius.circular(12.0),
           ),
         ),
-        // ),
         Container(
           margin: const EdgeInsets.only(left: 12.0, top: 123.0),
           padding: const EdgeInsets.fromLTRB(8.0, 5.0, 33.0, 5.0),

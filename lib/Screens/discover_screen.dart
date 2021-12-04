@@ -42,37 +42,39 @@ class DiscoverScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: Column(
-        children: [
-          const SizedBox(
-            height: 250,
-            child: HorizontalList(),
-          ),
-          Container(
-            padding: const EdgeInsets.all(12.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  "Recommended",
-                  style: GoogleFonts.merriweather(
-                    fontSize: 18.0,
-                    fontWeight: FontWeight.bold,
-                    letterSpacing: .55,
-                  ),
-                ),
-                Text(
-                  "View All",
-                  style: GoogleFonts.merriweather(
-                    fontSize: 14.0,
-                    letterSpacing: .25,
-                  ),
-                ),
-              ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            const SizedBox(
+              height: 250,
+              child: HorizontalList(),
             ),
-          ),
-          const RecommendedList(),
-        ],
+            Container(
+              padding: const EdgeInsets.all(12.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Recommended",
+                    style: GoogleFonts.merriweather(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
+                      letterSpacing: .55,
+                    ),
+                  ),
+                  Text(
+                    "View All",
+                    style: GoogleFonts.merriweather(
+                      fontSize: 14.0,
+                      letterSpacing: .25,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const RecommendedList(),
+          ],
+        ),
       ),
     );
   }
