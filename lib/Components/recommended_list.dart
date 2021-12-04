@@ -8,16 +8,16 @@ class RecommendedList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return Column(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Column(
+        Row(
           children: [
             RecommendedCard(
               image: const AssetImage(
-                'assets/images/mountain1.png',
+                'assets/images/recommended/night-forest-with-camp-fire-river-mountains.jpg',
               ),
-              title: 'Northern Mountain',
+              title: 'Fire Camp',
               stars: Row(
                 children: [
                   Icon(
@@ -48,15 +48,12 @@ class RecommendedList extends StatelessWidget {
                 ],
               ),
               rating: "5.0",
-            ),
-            const SizedBox(
-              height: 10.0,
             ),
             RecommendedCard(
               image: const AssetImage(
-                'assets/images/mountain1.png',
+                'assets/images/recommended/winter-forest-with-frozen-river.jpg',
               ),
-              title: 'Northern Mountain',
+              title: 'Frozen River',
               stars: Row(
                 children: [
                   Icon(
@@ -80,23 +77,26 @@ class RecommendedList extends StatelessWidget {
                     size: 17,
                   ),
                   Icon(
-                    Icons.star,
+                    Icons.star_half,
                     color: Colors.yellow[700],
                     size: 17,
                   ),
                 ],
               ),
-              rating: "5.0",
+              rating: "4.3",
             ),
           ],
         ),
-        Column(
+        const SizedBox(
+          height: 10.0,
+        ),
+        Row(
           children: [
             RecommendedCard(
               image: const AssetImage(
-                'assets/images/mountain1.png',
+                'assets/images/recommended/cartoon-nature-landscape-with-mountain-peaks.jpg',
               ),
-              title: 'Northern Mountain',
+              title: 'Mountain Peaks',
               stars: Row(
                 children: [
                   Icon(
@@ -120,22 +120,19 @@ class RecommendedList extends StatelessWidget {
                     size: 15,
                   ),
                   Icon(
-                    Icons.star,
+                    Icons.star_half,
                     color: Colors.yellow[700],
                     size: 15,
                   ),
                 ],
               ),
-              rating: "5.0",
-            ),
-            const SizedBox(
-              height: 10.0,
+              rating: "4.5",
             ),
             RecommendedCard(
               image: const AssetImage(
-                'assets/images/mountain1.png',
+                'assets/images/recommended/wooden-boat-float-forest-lake-pond-river.jpg',
               ),
-              title: 'Northern Mountain',
+              title: 'Boating in Forest',
               stars: Row(
                 children: [
                   Icon(
@@ -159,13 +156,13 @@ class RecommendedList extends StatelessWidget {
                     size: 17,
                   ),
                   Icon(
-                    Icons.star,
+                    Icons.star_half,
                     color: Colors.yellow[700],
                     size: 17,
                   ),
                 ],
               ),
-              rating: "5.0",
+              rating: "4.7",
             ),
           ],
         ),
