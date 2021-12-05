@@ -1,8 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+// ignore: must_be_immutable
 class PlaceInfo extends StatefulWidget {
-  const PlaceInfo({Key? key}) : super(key: key);
+  String image;
+  Text title;
+  Row ratingStars;
+  String rating;
+  int package;
+  
+  PlaceInfo({
+    required this.image,
+    required this.title,
+    required this.ratingStars,
+    required this.rating,
+    required this.package,
+    Key? key,
+  }) : super(key: key);
 
   @override
   State<PlaceInfo> createState() => _PlaceInfo();
@@ -14,6 +28,16 @@ class _PlaceInfo extends State<PlaceInfo> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        extendBodyBehindAppBar: true,
+        appBar: AppBar(
+          leading: IconButton(
+            icon: const Icon(Icons.arrow_back_ios),
+            onPressed: () => Navigator.pop(context),
+            color: Colors.black,
+          ),
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+        ),
         body: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -24,8 +48,9 @@ class _PlaceInfo extends State<PlaceInfo> {
                   bottomRight: Radius.circular(40.0),
                 ),
                 child: Image.asset(
-                  'assets/images/mountain1.png',
-                  fit: BoxFit.fitWidth,
+                  widget.image,
+                  fit: BoxFit.fitHeight,
+                  height: 270.0,
                   width: MediaQuery.of(context).size.width,
                 ),
               ),
@@ -186,7 +211,7 @@ class _PlaceInfo extends State<PlaceInfo> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      "25000/Package",
+                      "${widget.package}/Package",
                       style: GoogleFonts.roboto(
                         fontSize: 24.0,
                         color: Colors.deepPurple[900],
