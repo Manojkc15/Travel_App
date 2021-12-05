@@ -8,7 +8,7 @@ class PlaceInfo extends StatefulWidget {
   Row ratingStars;
   String rating;
   int package;
-  
+
   PlaceInfo({
     required this.image,
     required this.title,
@@ -134,21 +134,27 @@ class _PlaceInfo extends State<PlaceInfo> {
                       onTap: () => setState(() {
                         _count > 2 ? _count -= 1 : _count = 2;
                       }),
-                      child: Image.asset(
-                        "assets/icons/subtraction.png",
-                        width: 30.0,
-                        height: 30.0,
-                        color: Colors.deepPurple[900],
+                      child: Container(
+                        padding: const EdgeInsets.all(10.0),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(5.0),
+                          color: Colors.deepPurple[500],
+                        ),
+                        child: Image.asset(
+                          "assets/icons/subtraction.png",
+                          width: 20.0,
+                          height: 20.0,
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                     Container(
-                      margin: const EdgeInsets.only(left: 2.0, right: 3.0),
-                      padding: const EdgeInsets.fromLTRB(15.0, 6.0, 15.0, 6.0),
-                      decoration: BoxDecoration(
-                        color: Colors.grey,
-                        borderRadius: BorderRadius.circular(5.0),
+                      padding: const EdgeInsets.fromLTRB(15.0, 5.0, 15.0, 5.0),
+                      color: Colors.grey,
+                      child: Text(
+                        '$_count',
+                        style: const TextStyle(fontSize: 20.0),
                       ),
-                      child: Text('$_count'),
                     ),
                     InkWell(
                       onTap: () => setState(() {
@@ -156,11 +162,18 @@ class _PlaceInfo extends State<PlaceInfo> {
                           _count += 1;
                         }
                       }),
-                      child: Image.asset(
-                        "assets/icons/addition.png",
-                        width: 29.0,
-                        height: 29.0,
-                        color: Colors.deepPurple[900],
+                      child: Container(
+                        padding: const EdgeInsets.all(10.0),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(5.0),
+                          color: Colors.deepPurple[500],
+                        ),
+                        child: Image.asset(
+                          "assets/icons/addition.png",
+                          width: 20.0,
+                          height: 20.0,
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                     const SizedBox(width: 18.0),
