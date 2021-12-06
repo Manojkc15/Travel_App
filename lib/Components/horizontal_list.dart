@@ -48,7 +48,7 @@ class HorizontalList extends StatelessWidget {
                   ],
                 ),
                 rating: '5.0',
-                title: const Text('Northern Mountain'),
+                title: 'Northern Mountain',
                 package: 35000,
               ),
             ),
@@ -129,7 +129,7 @@ class HorizontalList extends StatelessWidget {
                     ),
                   ],
                 ),
-                title: const Text('National Park'),
+                title: 'National Park',
                 package: 45000,
               ),
             ),
@@ -180,7 +180,7 @@ class HorizontalList extends StatelessWidget {
             MaterialPageRoute(
               builder: (context) => PlaceInfo(
                 image: 'assets/images/Greenough-mountain.jpg',
-                title: const Text('Greenough Mountain'),
+                title: 'Greenough Mountain',
                 rating: '4.2',
                 ratingStars: Row(
                   children: [
@@ -256,7 +256,7 @@ class HorizontalList extends StatelessWidget {
             MaterialPageRoute(
               builder: (context) => PlaceInfo(
                 image: 'assets/images/mountain2.png',
-                title: const Text("Snowy Mountain"),
+                title: "Snowy Mountain",
                 rating: '5.0',
                 ratingStars: Row(
                   children: [

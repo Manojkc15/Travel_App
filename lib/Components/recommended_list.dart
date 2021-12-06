@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:page_transition/page_transition.dart';
 
 import 'package:travel_app/Components/recommended_card.dart';
+import 'package:travel_app/Screens/place_info.dart';
 
 // ignore: must_be_immutable
 class RecommendedList extends StatelessWidget {
@@ -13,77 +15,164 @@ class RecommendedList extends StatelessWidget {
       children: [
         Row(
           children: [
-            RecommendedCard(
-              image: const AssetImage(
-                'assets/images/recommended/night-forest-with-camp-fire-river-mountains.jpg',
+            GestureDetector(
+              onTap: () => Navigator.push(
+                context,
+                PageTransition(
+                  child: PlaceInfo(
+                    image:
+                        'assets/images/recommended/night-forest-with-camp-fire-river-mountains.jpg',
+                    title: "Night Forest with Fire Camp",
+                    ratingStars: Row(
+                      children: [
+                        Icon(
+                          Icons.star,
+                          color: Colors.yellow[700],
+                          size: 15,
+                        ),
+                        Icon(
+                          Icons.star,
+                          color: Colors.yellow[700],
+                          size: 15,
+                        ),
+                        Icon(
+                          Icons.star,
+                          color: Colors.yellow[700],
+                          size: 15,
+                        ),
+                        Icon(
+                          Icons.star,
+                          color: Colors.yellow[700],
+                          size: 15,
+                        ),
+                        Icon(
+                          Icons.star,
+                          color: Colors.yellow[700],
+                          size: 15,
+                        ),
+                      ],
+                    ),
+                    rating: "5.0",
+                    package: 50000,
+                  ),
+                  type: PageTransitionType.rightToLeft,
+                ),
               ),
-              title: 'Fire Camp',
-              stars: Row(
-                children: [
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 15,
-                  ),
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 15,
-                  ),
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 15,
-                  ),
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 15,
-                  ),
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 15,
-                  ),
-                ],
+              child: RecommendedCard(
+                image: const AssetImage(
+                  'assets/images/recommended/night-forest-with-camp-fire-river-mountains.jpg',
+                ),
+                title: 'Fire Camp',
+                stars: Row(
+                  children: [
+                    Icon(
+                      Icons.star,
+                      color: Colors.yellow[700],
+                      size: 15,
+                    ),
+                    Icon(
+                      Icons.star,
+                      color: Colors.yellow[700],
+                      size: 15,
+                    ),
+                    Icon(
+                      Icons.star,
+                      color: Colors.yellow[700],
+                      size: 15,
+                    ),
+                    Icon(
+                      Icons.star,
+                      color: Colors.yellow[700],
+                      size: 15,
+                    ),
+                    Icon(
+                      Icons.star,
+                      color: Colors.yellow[700],
+                      size: 15,
+                    ),
+                  ],
+                ),
+                rating: "5.0",
               ),
-              rating: "5.0",
             ),
-            RecommendedCard(
-              image: const AssetImage(
-                'assets/images/recommended/winter-forest-with-frozen-river.jpg',
+            GestureDetector(
+              onTap: () => Navigator.push(
+                context,
+                PageTransition(
+                  child: PlaceInfo(
+                      image:
+                          'assets/images/recommended/winter-forest-with-frozen-river.jpg',
+                      title: 'Winter Forest with Frozen River',
+                      ratingStars: Row(
+                        children: [
+                          Icon(
+                            Icons.star,
+                            color: Colors.yellow[700],
+                            size: 17,
+                          ),
+                          Icon(
+                            Icons.star,
+                            color: Colors.yellow[700],
+                            size: 17,
+                          ),
+                          Icon(
+                            Icons.star,
+                            color: Colors.yellow[700],
+                            size: 17,
+                          ),
+                          Icon(
+                            Icons.star,
+                            color: Colors.yellow[700],
+                            size: 17,
+                          ),
+                          Icon(
+                            Icons.star_half,
+                            color: Colors.yellow[700],
+                            size: 17,
+                          ),
+                        ],
+                      ),
+                      rating: '4.3',
+                      package: 42000),
+                  type: PageTransitionType.leftToRight,
+                ),
               ),
-              title: 'Frozen River',
-              stars: Row(
-                children: [
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 17,
-                  ),
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 17,
-                  ),
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 17,
-                  ),
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 17,
-                  ),
-                  Icon(
-                    Icons.star_half,
-                    color: Colors.yellow[700],
-                    size: 17,
-                  ),
-                ],
+              child: RecommendedCard(
+                image: const AssetImage(
+                  'assets/images/recommended/winter-forest-with-frozen-river.jpg',
+                ),
+                title: 'Frozen River',
+                stars: Row(
+                  children: [
+                    Icon(
+                      Icons.star,
+                      color: Colors.yellow[700],
+                      size: 17,
+                    ),
+                    Icon(
+                      Icons.star,
+                      color: Colors.yellow[700],
+                      size: 17,
+                    ),
+                    Icon(
+                      Icons.star,
+                      color: Colors.yellow[700],
+                      size: 17,
+                    ),
+                    Icon(
+                      Icons.star,
+                      color: Colors.yellow[700],
+                      size: 17,
+                    ),
+                    Icon(
+                      Icons.star_half,
+                      color: Colors.yellow[700],
+                      size: 17,
+                    ),
+                  ],
+                ),
+                rating: "4.3",
               ),
-              rating: "4.3",
             ),
           ],
         ),
@@ -92,77 +181,164 @@ class RecommendedList extends StatelessWidget {
         ),
         Row(
           children: [
-            RecommendedCard(
-              image: const AssetImage(
-                'assets/images/recommended/cartoon-nature-landscape-with-mountain-peaks.jpg',
+            GestureDetector(
+              onTap: () => Navigator.push(
+                context,
+                PageTransition(
+                  child: PlaceInfo(
+                      image:
+                          'assets/images/recommended/cartoon-nature-landscape-with-mountain-peaks.jpg',
+                      title: 'Mountain Peaks',
+                      ratingStars: Row(
+                        children: [
+                          Icon(
+                            Icons.star,
+                            color: Colors.yellow[700],
+                            size: 15,
+                          ),
+                          Icon(
+                            Icons.star,
+                            color: Colors.yellow[700],
+                            size: 15,
+                          ),
+                          Icon(
+                            Icons.star,
+                            color: Colors.yellow[700],
+                            size: 15,
+                          ),
+                          Icon(
+                            Icons.star,
+                            color: Colors.yellow[700],
+                            size: 15,
+                          ),
+                          Icon(
+                            Icons.star_half,
+                            color: Colors.yellow[700],
+                            size: 15,
+                          ),
+                        ],
+                      ),
+                      rating: '4.5',
+                      package: 36000),
+                  type: PageTransitionType.rightToLeft,
+                ),
               ),
-              title: 'Mountain Peaks',
-              stars: Row(
-                children: [
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 15,
-                  ),
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 15,
-                  ),
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 15,
-                  ),
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 15,
-                  ),
-                  Icon(
-                    Icons.star_half,
-                    color: Colors.yellow[700],
-                    size: 15,
-                  ),
-                ],
+              child: RecommendedCard(
+                image: const AssetImage(
+                  'assets/images/recommended/cartoon-nature-landscape-with-mountain-peaks.jpg',
+                ),
+                title: 'Mountain Peaks',
+                stars: Row(
+                  children: [
+                    Icon(
+                      Icons.star,
+                      color: Colors.yellow[700],
+                      size: 15,
+                    ),
+                    Icon(
+                      Icons.star,
+                      color: Colors.yellow[700],
+                      size: 15,
+                    ),
+                    Icon(
+                      Icons.star,
+                      color: Colors.yellow[700],
+                      size: 15,
+                    ),
+                    Icon(
+                      Icons.star,
+                      color: Colors.yellow[700],
+                      size: 15,
+                    ),
+                    Icon(
+                      Icons.star_half,
+                      color: Colors.yellow[700],
+                      size: 15,
+                    ),
+                  ],
+                ),
+                rating: "4.5",
               ),
-              rating: "4.5",
             ),
-            RecommendedCard(
-              image: const AssetImage(
-                'assets/images/recommended/wooden-boat-float-forest-lake-pond-river.jpg',
+            GestureDetector(
+              onTap: () => Navigator.push(
+                context,
+                PageTransition(
+                  child: PlaceInfo(
+                    image:
+                        'assets/images/recommended/wooden-boat-float-forest-lake-pond-river.jpg',
+                    title: 'Boating & Forest visit',
+                    ratingStars: Row(
+                      children: [
+                        Icon(
+                          Icons.star,
+                          color: Colors.yellow[700],
+                          size: 17,
+                        ),
+                        Icon(
+                          Icons.star,
+                          color: Colors.yellow[700],
+                          size: 17,
+                        ),
+                        Icon(
+                          Icons.star,
+                          color: Colors.yellow[700],
+                          size: 17,
+                        ),
+                        Icon(
+                          Icons.star,
+                          color: Colors.yellow[700],
+                          size: 17,
+                        ),
+                        Icon(
+                          Icons.star_half,
+                          color: Colors.yellow[700],
+                          size: 17,
+                        ),
+                      ],
+                    ),
+                    rating: '4.5',
+                    package: 55000,
+                  ),
+                  type: PageTransitionType.leftToRight,
+                ),
               ),
-              title: 'Boating in Forest',
-              stars: Row(
-                children: [
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 17,
-                  ),
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 17,
-                  ),
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 17,
-                  ),
-                  Icon(
-                    Icons.star,
-                    color: Colors.yellow[700],
-                    size: 17,
-                  ),
-                  Icon(
-                    Icons.star_half,
-                    color: Colors.yellow[700],
-                    size: 17,
-                  ),
-                ],
+              child: RecommendedCard(
+                image: const AssetImage(
+                  'assets/images/recommended/wooden-boat-float-forest-lake-pond-river.jpg',
+                ),
+                title: 'Boating in Forest',
+                stars: Row(
+                  children: [
+                    Icon(
+                      Icons.star,
+                      color: Colors.yellow[700],
+                      size: 17,
+                    ),
+                    Icon(
+                      Icons.star,
+                      color: Colors.yellow[700],
+                      size: 17,
+                    ),
+                    Icon(
+                      Icons.star,
+                      color: Colors.yellow[700],
+                      size: 17,
+                    ),
+                    Icon(
+                      Icons.star,
+                      color: Colors.yellow[700],
+                      size: 17,
+                    ),
+                    Icon(
+                      Icons.star_half,
+                      color: Colors.yellow[700],
+                      size: 17,
+                    ),
+                  ],
+                ),
+                rating: "4.7",
               ),
-              rating: "4.7",
             ),
           ],
         ),

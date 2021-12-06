@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 // ignore: must_be_immutable
 class PlaceInfo extends StatefulWidget {
   String image;
-  Text title;
+  String title;
   Row ratingStars;
   String rating;
   int package;
@@ -57,7 +57,7 @@ class _PlaceInfo extends State<PlaceInfo> {
               Container(
                 padding: const EdgeInsets.only(left: 20.0, top: 10.0),
                 child: Text(
-                  "Northern Mountain",
+                  widget.title,
                   style: GoogleFonts.robotoSlab(
                     fontSize: 26.0,
                     fontWeight: FontWeight.bold,
@@ -115,7 +115,7 @@ class _PlaceInfo extends State<PlaceInfo> {
                       width: 4.0,
                     ),
                     Text(
-                      "4.9",
+                      widget.rating,
                       style: GoogleFonts.robotoSlab(
                         fontWeight: FontWeight.bold,
                       ),
