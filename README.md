@@ -6,8 +6,8 @@ A new Flutter project.
 <table>
   <tr>
     <td><img src="https://github.com/Manojkc15/Travel_App/blob/master/Screenshots/Screen1.png" alt="Screen 1" style="height: 400px"></td>
-    <td><img src="https://github.com/Manojkc15/Travel_App/blob/master/Screenshots/Screen2.png" alt="Screen 1" style="height: 400px"></td>
-    <td><img src="https://github.com/Manojkc15/Travel_App/blob/master/Screenshots/Screen3.png" alt="Screen 1" style="height: 400px"></td>
+    <td><img src="https://github.com/Manojkc15/Travel_App/blob/master/Screenshots/Screen2.png" alt="Screen 2" style="height: 400px"></td>
+    <td><img src="https://github.com/Manojkc15/Travel_App/blob/master/Screenshots/Screen3.png" alt="Screen 3" style="height: 400px"></td>
   </tr>
 </table>
 
