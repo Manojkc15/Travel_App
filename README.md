@@ -5,9 +5,9 @@ A new Flutter project.
 Screenshots:
 <table>
   <tr>
-    <td><img src="https://github.com/Manojkc15/Travel_App/blob/master/Screenshots/Screen1.png" alt="Screen 1" style="height: 500px"></td>
-    <td><img src="https://github.com/Manojkc15/Travel_App/blob/master/Screenshots/Screen2.png" alt="Screen 1" style="height: 500px"></td>
-    <td><img src="https://github.com/Manojkc15/Travel_App/blob/master/Screenshots/Screen3.png" alt="Screen 1" style="height: 500px"></td>
+    <td><img src="https://github.com/Manojkc15/Travel_App/blob/master/Screenshots/Screen1.png" alt="Screen 1" style="height: 400px"></td>
+    <td><img src="https://github.com/Manojkc15/Travel_App/blob/master/Screenshots/Screen2.png" alt="Screen 1" style="height: 400px"></td>
+    <td><img src="https://github.com/Manojkc15/Travel_App/blob/master/Screenshots/Screen3.png" alt="Screen 1" style="height: 400px"></td>
   </tr>
 </table>
 
