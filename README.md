@@ -2,7 +2,7 @@
 
 A new Flutter project.
 
-Screenshots:
+## Screenshots:
 <table>
   <tr>
     <td><img src="https://github.com/Manojkc15/Travel_App/blob/master/Screenshots/Screen1.png" alt="Screen 1" style="height: 400px"></td>
