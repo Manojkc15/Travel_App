@@ -245,7 +245,7 @@ class _PlaceInfo extends State<PlaceInfo> {
                         child: Text(
                           "Book Now",
                           style: GoogleFonts.merriweather(
-                            fontSize: 20.0,
+                            fontSize: 18.0,
                             color: Colors.white,
                           ),
                         ),
