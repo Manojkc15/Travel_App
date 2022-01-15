@@ -216,7 +216,12 @@ class HorizontalList extends StatelessWidget {
             ),
           ),
           child: CardSample(
-            image: Image.asset('assets/images/Greenough-mountain.jpg'),
+            image: Image.asset(
+              'assets/images/Greenough-mountain.jpg',
+              height: 355,
+              width: 352,
+              fit: BoxFit.fitHeight,
+            ),
             title: 'Greenough Mountain',
             rating: "4.2",
             stars: Row(

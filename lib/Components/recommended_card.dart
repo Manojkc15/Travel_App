@@ -36,7 +36,7 @@ class RecommendedCard extends StatelessWidget {
           ),
         ),
         Container(
-          width: 182.0,
+          width: MediaQuery.of(context).size.width / 2.24,
           margin: const EdgeInsets.only(left: 12.0, top: 123.0),
           padding: const EdgeInsets.fromLTRB(8.0, 5.0, 0.0, 5.0),
           decoration: BoxDecoration(
